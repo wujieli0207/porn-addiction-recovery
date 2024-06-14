@@ -22,6 +22,7 @@ const {
   description,
   openGraph = {},
   twitter = {},
+  keywords = [],
 } = Astro.props;
 
 const seoProps: AstroSeoProps = merge(
@@ -59,6 +60,7 @@ const seoProps: AstroSeoProps = merge(
     noindex: typeof robots?.index !== 'undefined' ? !robots.index : undefined,
     nofollow: typeof robots?.follow !== 'undefined' ? !robots.follow : undefined,
     description: description,
+    keywords: keywords.join(','),
     openGraph: { url: canonical, ...openGraph },
     twitter: twitter,
   }

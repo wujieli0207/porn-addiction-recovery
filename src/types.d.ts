@@ -61,6 +61,7 @@ export interface MetaData {
 
   openGraph?: MetaDataOpenGraph;
   twitter?: MetaDataTwitter;
+  keywords?: string[];
 }
 
 export interface MetaDataRobots {
@@ -286,3 +287,39 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
 }
 
 export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
+
+export interface IConfig {
+  site: {
+    name: string;
+    site: string;
+    base: string;
+    trailingSlash: boolean;
+    googleSiteVerificationId: string;
+  };
+  metadata: {
+    title: {
+      default: string;
+      template: string;
+    };
+    description: string;
+    keywords: string[];
+    robots: {
+      index: boolean;
+      follow: boolean;
+    };
+    openGraph: {
+      site_name: string;
+      images: {
+        url: string;
+        width: number;
+        height: number;
+      };
+      type: string;
+    };
+    twitter: {
+      handle: string;
+      site: string;
+      cardType: string;
+    };
+  };
+}

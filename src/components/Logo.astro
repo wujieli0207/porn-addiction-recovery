@@ -1,9 +1,11 @@
 ---
+// import Image from '~/components/common/Image.astro';
 import { SITE } from 'astrowind:config';
 ---
 
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+  class="flex items-center self-center ml-2 rtl:ml-0 rtl:mr-2 text-xl md:text-2xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
 >
-  🚀 {SITE?.name}
+  <!-- <Image class="mr-1" width={30} height={30} layout="cover" src="~/assets/images/logo.png" alt="logo" /> -->
+  {SITE?.name}
 </span>

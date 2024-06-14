@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: 'Porn Addiction Recovery'
+  site: 'https://porn-addiction-recovery.com/'
   base: '/'
   trailingSlash: false
 
@@ -9,9 +9,10 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: 'Porn Addiction Recovery'
+    template: '%s — Porn Addiction Recovery'
+  description: 'Escape porn addiction, embrace healthy life.'
+  keywords: ['porn addiction recovery']
   robots:
     index: true
     follow: true
@@ -23,8 +24,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@li_wujie'
+    site: '@li_wujie'
     cardType: summary_large_image
 
 i18n:

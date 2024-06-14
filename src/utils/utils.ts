@@ -1,4 +1,7 @@
 import { I18N } from 'astrowind:config';
+import yaml from 'js-yaml';
+import fs from 'fs';
+import type { IConfig } from '~/types';
 
 export const formatter: Intl.DateTimeFormat = new Intl.DateTimeFormat(I18N?.language, {
   year: 'numeric',
@@ -49,4 +52,11 @@ export const toUiAmount = (amount: number) => {
   }
 
   return value;
+};
+
+export const getConfigAsJson = (): IConfig => {
+  const fileContents = fs.readFileSync('./src/config.yaml', 'utf8');
+  const data = yaml.load(fileContents) as IConfig;
+
+  return data;
 };
