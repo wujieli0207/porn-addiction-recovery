@@ -2,7 +2,7 @@ site:
   name: 'Porn Addiction Recovery'
   site: 'https://porn-addiction-recovery.com/'
   base: '/'
-  trailingSlash: false
+  trailingSlash: true
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
@@ -17,7 +17,7 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: 'Porn Addiction Recovery'
     images:
       - url: '~/assets/images/default.png'
         width: 1200
